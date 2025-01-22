@@ -30,7 +30,7 @@ contactForm.addEventListener("submit", async (event) => {
   };
 
   try {
-    const response = await fetch("https://company-website-offers.vercel.app/send-email", {
+    const response = await fetch("http://localhost:3000/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
