@@ -2,13 +2,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
-import cors from 'cors';
-
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import path from "path";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
@@ -19,21 +14,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// Serve static HTML form
-app.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/index.html`);
-});
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handle form submission
-app.post("api/send-email", async (req, res) => {
+app.post("/send-email", async (req, res) => {
   const { name, email, phone, message } = req.body;
 
   // Configure Nodemailer transport
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL, 
-      pass: process.env.PASSWORD, 
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
