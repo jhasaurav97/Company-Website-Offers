@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/Coregenic-logo.jpg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://coregenicsoftwares.com/about-us/" target="_blank">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://coregenicsoftwares.com/web-design-development/" target="_blank">Services</a>
+          </li>
+        </ul>
+        <button class="btn btn-custom ms-3" id="openFormBtn">Get in Touch</button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="popup-form-container" id="popupFormContainer">
+    <div class="popup-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm" method="POST" action="/send-email">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+            <button type="button" class="close-btn" id="closeFormBtn">Close</button>
+        </form>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="hero-section">
+      <div class="container-fluid hero">
+        <div class="row align-items-center">
+          <div class="col-lg-12 text-center mt-3 hero-custom">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Package-section">
+      <div class="container-fluid packages">
+        <div class="col-md-6 package-custom">
+          <div class="card h-100 border-0 shadow-lg rounded-4 package-card">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold text-gradient-primary">
+                WebXcel Starter Package
+              </h5>
+              <p class="card-text ">
+                <strong>Time Frame:</strong> 5–7 Business Days
+              </p>
+              <h5 class="fw-bold">Inclusions</h5>
+              <div class="part one border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">1.Core Design</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Appealing Custom Home Page Design</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>5-7 responsive web pages</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Mobile-friendly Design</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Optimized images for Fast-loading</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Logo integration and branding elements</li>
+                </ul>
+              </div>
+              <div class="part two border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">2.Features & Functionalities</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic contact form with email notifications.</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Google Maps integration for easy location access.</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Social media integration (Facebook, Instagram, etc.).</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Photo and video gallery setup.</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>One-click call and WhatsApp integration.</li>
+                </ul>
+              </div>
+              <div class="part three border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                <h6 class="fw-bold">3.Add-Ons</h6>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Favicon design.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Scroll-to-top button</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic animation effects for added visual appeal.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>5 Free stock images</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Testimonial section design</li>
+              </ul>
+              </div>
+              <div class="part four border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                <h6 class="fw-bold">4.SEO and Analytics</h6>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic on-page SEO</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Google Analytics setup</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>XML sitemap submission</li>
+              </ul>
+              </div>
+
+              <div class="part four border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                <h6 class="fw-bold">5.Bonus Offering</h6>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Social media sharing buttons.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Chatbot Integration</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic Animations</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Special Offers Section</li>
+              </ul>
+              </div>
+
+              <div class="part four border-0 shadow rounded-4">
+                <ul class="list-unstyled ps-3">
+                <h6 class="fw-bold">6.Security and Backup</h6>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>SSL certificate integration for secure browsing.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic website security setup to prevent malware.</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Monthly automated backups for peace of mind.</li>
+              </ul>
+              </div>
+              <p class="price mb-3 mt-3 text-danger fw-bold">
+                30% OFF
+              </p>
+              <div class="card-btn">
+                <!-- <a href="#" class="btn btn-customs px-4 py-2 rounded-pill" id="openFormBtn">
+                  Claim Offer
+                </a> -->
+                <button class="btn btn-customs px-4 py-2 rounded-pill" id="openFormBtn">
+                  Claim Offer
+                </button>
+                <button class="btn btn-customs chatBtn px-4 py-2 rounded-pill">
+                  Chat Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 package-custom">
+          <div class="card h-100 border-0 shadow-lg rounded-4 package-card">
+            <div class="card-body p-4">
+              <h5 class="card-title fw-bold text-gradient-primary">
+                WebXcel ecomStarter Package
+              </h5>
+              <p class="card-text">
+                <strong>Time Frame:</strong> 7–10 Business Days
+              </p>
+              <h5 class="fw-bold">Inclusions</h5>
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">1. Core Design</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Appealing Custom Home Page Design</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Product Pages: Up to 10 product listings</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Shopping Cart & Checkout</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Payment Gateway Integration</li>
+                </ul>
+              </div>
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">2. Quick Functionalities</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Product Categories & Filters: up to 5</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Search Functionality</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Customer Registration/Login</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Order Confirmation Emails</li>
+                </ul>
+              </div>
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">3. Add-Ons</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Wishlist Feature</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Newsletter Signup Form</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Social Media Integration</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Favicon Setup</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Scroll-to-Top Button</li>
+                </ul>
+              </div>
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">4. Security & Maintenance</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>SSL Certificate Integration</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic Website Security</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Monthly Backup Setup</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>3-Month Support</li>
+                </ul>
+              </div>
+
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">5.SEO & Marketing</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic SEO Optimization</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Google Analytics Setup</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Social Sharing Buttons</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Custom Thank-You Page</li>
+                </ul>
+              </div>
+
+              <div class="part shadow-lg rounded-4">
+                <ul class="list-unstyled ps-3">
+                  <h6 class="fw-bold">6.Bonus Offering</h6>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Free Stock Images: Up to 5</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Basic Animations</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Special Offers Section</li>
+                </ul>
+              </div>
+              <p class="price mb-3 mt-3 text-danger fw-bold">
+                30% OFF
+              </p>
+              <div class="card-btn">
+                <button class="btn btn-customs px-4 py-2 rounded-pill" id="openFormBtn">
+                  Claim Offer
+                </button>
+                <button class="btn btn-customs chatBtn px-4 py-2 rounded-pill">
+                  Chat Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="custom-footer">
+    <div class="text-center">
+      &copy; 2025 - Coregenic Softwares Pvt. Ltd. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="app.js"></script>
+
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
+
+    (function() {
+        var s1 = document.createElement("script");
+        var s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/6786565b3a842732606e963f/1ihic2ltt';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+
+    
+    Tawk_API.onLoad = function() {
+            
+            var chatButtons = document.querySelectorAll('.chatBtn');
+            chatButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    Tawk_API.maximize();
+                });
+            });
+        };
+</script>
+
+  <script>
+      contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phoneNumber').value;
+            const message = document.getElementById('message').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/send-email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ name, email, phone, message }),
+                });
+
+                const result = await response.json();
+                if (response.ok) {
+                    alert(result.message);
+                } else {
+                    alert('Failed to send email. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        });
+  </script>
+</body>
+
+</html>
