@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 // Handle form submission
-app.post("/send-email", async (req, res) => {
+app.post("api/send-email", async (req, res) => {
   const { name, email, phone, message } = req.body;
 
   // Configure Nodemailer transport
